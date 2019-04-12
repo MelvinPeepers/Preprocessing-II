@@ -90,8 +90,8 @@
     @media @mobile {
       width: 90%;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .destination {
@@ -106,17 +106,16 @@
       .btn {
         display: flex;
         justify-content: center;
+        width: 100%;
       }
     
       .btn button {
 
         background-color: @button-bg;
         color: @main-bg;
+        width: 100%;
         .button-btn(1.5rem; 12px 50px; 10px);
 
-        @media @mobile {
-          width: 100%;
-        }
       }
     }
   }
